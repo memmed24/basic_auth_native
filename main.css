@@ -1,0 +1,69 @@
+body{
+   padding:0; 
+   margin: 0;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+   
+} 
+.wrap{
+   height: 100vh;
+   padding: 0 200px;
+   background: aliceblue;
+   display:flex;
+   flex-direction: row;
+   align-items: center;
+   text-align: center;
+}
+.wrap div{
+   transition: 150ms all linear;
+   height: 500px;
+   padding-top: 20px;
+   background-color: white;
+   flex-grow: 2;
+   border-radius: 3px;
+}
+.wrap div:hover{
+   box-shadow: 0 0 50px #e3e3e3;
+}
+.wrap div:first-child{
+   border-right: 1px solid #e3e3e3;
+}
+.wrap div input {
+   transition: 550ms all linear;
+}
+.wrap div input[type="text"], .wrap div input[type="password"], .wrap div input[type="email"]{
+   padding: 20px;
+   width: 80%;
+   border: 0;
+   border-radius: 3px;
+}
+.wrap div input:focus{
+   outline: 0;
+   border: 1px solid #e3e3e3;
+}
+.wrap div input[type="submit"]{
+   padding: 10px 30px;
+   border: 0;
+   border: 1px solid #e3e3e3;
+   background-color: aliceblue;
+   cursor: pointer;
+   border-radius: 3px;
+}
+.wrap div input[type="submit"]:hover{
+   background-color: azure
+}
+.status {
+   padding: 20px 0;
+   text-align: center;
+   border-radius: 3px;
+}
+.fail {
+   background-color: plum;
+   color: white;
+   border-bottom: 1px solid red;
+   
+}
+.success{
+   background-color: lightgreen;
+   color: white;
+   border-bottom: 1px solid darkgreen;
+}
